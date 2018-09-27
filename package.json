@@ -7,7 +7,10 @@
     "axios": "^0.18.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-linkedin-login-oauth2": "^1.0.5",
     "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5",
     "redux": "^4.0.0",
     "redux-immutable-state-invariant": "^2.1.0",
@@ -23,7 +26,21 @@
     "/torre": {
       "target": "https://torre.bio/api",
       "pathRewrite": {
-        "^/torre" : ""
+        "^/torre": ""
+      },
+      "changeOrigin": true
+    },
+    "/tok": {
+      "target": "https://www.linkedin.com/oauth/v2/accessToken",
+      "pathRewrite": {
+        "^/tok": ""
+      },
+      "changeOrigin": true
+    },
+    "/lnk": {
+      "target": "https://api.linkedin.com/v1",
+      "pathRewrite": {
+        "^/lnk": ""
       },
       "changeOrigin": true
     }
