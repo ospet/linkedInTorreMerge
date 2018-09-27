@@ -1,0 +1,1 @@
+export const GOT_TORRE_PROFILE = 'GOT_TORRE_PROFILE';
